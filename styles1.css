@@ -1,0 +1,162 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light background */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #444; /* Dark navbar */
+    padding: 10px;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.logo-nav {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff; /* Light color for links */
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffcc00; /* Highlight color on hover */
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #333; /* Dark color for headings */
+}
+
+p {
+    font-size: x-large;
+}
+
+.section {
+    padding: 20px;
+}
+
+/* Enhanced product styles */
+.product {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #ffffff; /* Light background for product items */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s, transform 0.3s; /* Transition effects */
+}
+
+.product:hover {
+    background-color: #f2f2f2; /* Light gray on hover */
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+.product img {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    margin-right: 15px;
+}
+
+.product div {
+    flex: 1;
+    color: #555; /* Darker text color for product description */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack navbar items vertically */
+        align-items: flex-start; /* Align items to the start */
+        background-color: #333; /* Darker navbar for mobile */
+    }
+
+    .navbar a {
+        margin: 5px 0; /* Vertical spacing for links */
+    }
+
+    .product {
+        flex-direction: column; /* Stack product image and description */
+        align-items: center; /* Center align items */
+        text-align: center; /* Center text for small screens */
+        background-color: #fff; /* Maintain white background */
+    }
+
+    .product:hover {
+        background-color: #e0e0e0; /* Darker gray on hover for mobile */
+    }
+
+    .product img {
+        width: 100%; /* Make images responsive */
+        max-width: 150px; /* Set a max width for images */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        background-color: #eaeaea; /* Slightly darker background for small screens */
+    }
+
+    .navbar {
+        background-color: #222; /* Darker navbar */
+    }
+
+    h1 {
+        font-size: 24px; /* Smaller heading size */
+        color: #ffcc00; /* Yellow color for heading on dark background */
+    }
+
+    .navbar a {
+        font-size: 14px; /* Smaller link size */
+    }
+
+    .product {
+        padding: 10px; /* Reduced padding for products */
+        border-radius: 5px; /* Sharper corners for mobile */
+    }
+
+    .product div {
+        color: #444; /* Darker text color for product description */
+    }
+
+    .product:hover {
+        background-color: #d0d0d0; /* Darker gray on hover for mobile */
+        transform: scale(1.01); /* Slightly enlarge on hover for mobile */
+    }
+
+    .section {
+        padding: 15px; /* Reduced section padding for mobile */
+        background-color: #fff; /* White background for sections */
+        border-radius: 5px; /* Rounded corners for sections */
+    }
+}
+
+/* Footer styling for added element */
+footer {
+    background-color: #333; /* Dark footer */
+    color: #fff; /* White text in footer */
+    text-align: center;
+    padding: 15px 0; /* Padding for footer */
+    position: relative; /* Positioning for footer */
+    bottom: 0; /* Stick to bottom */
+    width: 100%; /* Full width */
+}
+
+footer p {
+    margin: 0; /* No margin for footer text */
+    font-size: 14px; /* Smaller footer text */
+}
+
+

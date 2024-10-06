@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background-color: #f0f0f0; /* Light gray for overall background */
+    color: #333; /* Dark gray for text */
+}
+
+.logo-nav {
+    width: 50px; /* Set logo size */
+    height: 50px; /* Set height to match width for a circle */
+    border-radius: 50%; /* Make the logo circular */
+    object-fit: cover; /* Ensure the image covers the circle without distortion */
+    margin-right: 15px; /* Spacing between logo and links */
+}
+
+.navbar {
+    background-color: #1e1e1e; /* Dark background for navbar */
+    display: flex;
+    align-items: center; /* Center align items vertically */
+    padding: 10px; /* Padding for navbar */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.navbar a {
+    color: #ffffff; /* White text for links */
+    padding: 15px 20px;
+    text-decoration: none; /* No underline on links */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+.navbar a:hover {
+    color: #f39c12; /* Soft orange on hover */
+}
+
+/* Responsive Styles for Navigation */
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: center; /* Center all items */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items */
+        background-color: #2c3e50; /* Change navbar color for mobile */
+    }
+
+    .navbar a {
+        padding: 10px 0; /* Padding adjustment for smaller screens */
+        color: #f1c40f; /* Change link color for mobile */
+    }
+
+    .logo-nav {
+        width: 40px; /* Smaller logo for mobile */
+        height: 40px; /* Maintain aspect ratio for circle */
+    }
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2980b9; /* Blue for the hero section */
+    color: white; /* White text for contrast */
+    padding: 60px 40px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.hero-text {
+    max-width: 60%;
+}
+
+.hero-logo {
+    max-width: 30%;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-col, .products-col {
+    background-color: #ffffff; /* White for content sections */
+    padding: 20px;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    margin: 10px 0; /* Margin for spacing */
+}
+
+/* Change colors for hero section on smaller screens */
+@media (max-width: 768px) {
+    .hero {
+        background-color: #3498db; /* Lighter blue for hero section on mobile */
+    }
+}
+
+.order-info {
+    text-align: center;
+    margin: 20px 0;
+    background-color: #16a085; /* Teal for order info */
+    color: white; /* White text for contrast */
+    padding: 15px;
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Change order info color on smaller screens */
+@media (max-width: 768px) {
+    .order-info {
+        background-color: #1abc9c; /* Lighter teal for order info on mobile */
+    }
+}
+
+/* Button styles */
+.buttons-container {
+    display: flex;
+    justify-content: space-between; /* Space out buttons */
+    margin-top: 20px; /* Margin for spacing */
+    flex-wrap: wrap; /* Allow wrapping of buttons */
+}
+
+.styled-btn {
+    background-color: #2c3e50; /* Darker blue for buttons */
+    color: white; /* White text on buttons */
+    padding: 10px 20px; /* Padding for buttons */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+    text-align: center; /* Center text in buttons */
+    margin: 5px; /* Margin for spacing between buttons */
+}
+
+.styled-btn:hover {
+    background-color: #34495e; /* Darker shade on hover */
+}
+
+/* Change button color on smaller screens */
+@media (max-width: 768px) {
+    .styled-btn {
+        background-color: #8e44ad; /* Purple for buttons on mobile */
+    }
+
+    .styled-btn:hover {
+        background-color: #9b59b6; /* Lighter purple on hover */
+    }
+}
+
+p {
+    font-size: x-large;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .hero {
+        flex-direction: column; /* Stack elements on smaller screens */
+        text-align: center; /* Center align text */
+    }
+
+    .about-col, .products-col {
+        padding: 15px; /* Less padding on smaller screens */
+        max-width: 90%; /* Limit width on smaller screens */
+        margin: 10px auto; /* Center align columns */
+        background-color: #ecf0f1; /* Light gray for content sections on medium screens */
+    }
+
+    .buttons-container {
+        justify-content: center; /* Center buttons on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .styled-btn {
+        width: 100%; /* Full-width buttons */
+    }
+
+    .order-info {
+        font-size: 14px; /* Smaller font for mobile */
+    }
+
+    .hero {
+        padding: 40px 20px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 24px; /* Smaller font size for mobile */
+    }
+
+    .hero-text p {
+        font-size: 14px; /* Smaller paragraph for mobile */
+    }
+
+    .about-col, .products-col {
+        padding: 10px; /* Minimal padding */
+        background-color: #bdc3c7; /* Gray for content sections on mobile */
+    }
+
+    .social-media img {
+        width: 30px; /* Smaller icons for mobile */
+        margin: 0 5px; /* Spacing between icons */
+    }
+
+    footer {
+        font-size: 12px; /* Smaller footer text */
+    }
+}
